@@ -163,7 +163,7 @@ header.sticky {
 html[style*="direction: ltr"] .nav .custom-btn {
     position: absolute;
     left: unset;
-    right: 2%;
+    right: -16%;
 }
 html[style*="direction: ltr"] .nav .custom-btn svg{
     right: unset;
