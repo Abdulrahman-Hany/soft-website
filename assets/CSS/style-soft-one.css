@@ -143,7 +143,7 @@ header.sticky {
 
 .nav .custom-btn {
     position: absolute;
-    left: 31%;
+    left: 17%;
     top: 80%;
     transform: translateX(-70%);
     width: 145px;
@@ -159,6 +159,17 @@ header.sticky {
     visibility: hidden;
     transition: all 0.4s ease;
 }
+
+html[style*="direction: ltr"] .nav .custom-btn {
+    position: absolute;
+    left: unset;
+    right: 2%;
+}
+html[style*="direction: ltr"] .nav .custom-btn svg{
+    right: unset;
+    left: 10px;
+}
+
 
 .nav .custom-btn a {
     color: #074077;
@@ -273,6 +284,7 @@ header.sticky {
     justify-content: start;
     max-width: 818px;
 }
+
 .main-heading {
     color: rgba(7, 64, 119, 1);
     font-size: 44px;
@@ -868,21 +880,22 @@ header.sticky {
 .contact-image {
     display: none;
 }
+
 html[style*="direction: rtl"] .contact-image.ar {
     display: block;
-  }
-  
-  html[style*="direction: rtl"] .contact-image.en {
+}
+
+html[style*="direction: rtl"] .contact-image.en {
     display: none;
-  }
-  
-  html[style*="direction: ltr"] .contact-image.en {
+}
+
+html[style*="direction: ltr"] .contact-image.en {
     display: block;
-  }
-  
-  html[style*="direction: ltr"] .contact-image.ar {
+}
+
+html[style*="direction: ltr"] .contact-image.ar {
     display: none;
-}  
+}
 
 .contact-content {
     align-self: stretch;
@@ -1489,6 +1502,7 @@ html[style*="direction: rtl"] .contact-image.ar {
 html[style*="direction: ltr"] .c-carousel {
     direction: rtl;
 }
+
 .brand-section {
     max-width: 1230px;
     margin: 0 auto;
@@ -1770,7 +1784,7 @@ input.check-toggle-round-flat:checked+label:after {
     }
 
     .contact-container .contact-image {
-        display: none;
+        display: none !important;
     }
 
     .contact-title {
@@ -1971,14 +1985,32 @@ input.check-toggle-round-flat:checked+label:after {
 
 @media(max-width: 480px) {
     .logo img {
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
     }
-
+    input.check-toggle-round-flat+label {
+        width: 75px;
+        height: 27px;
+    }
+    .switch>span.on ,
+    .switch>span.off{
+        top: 7px;
+    }
+    .switch>span {
+        font-size: 10px;
+    }
+    input.check-toggle-round-flat+label:after {
+        left: 7px;
+    }
+    input.check-toggle-round-flat+label:after {
+        width: 26px;
+    }
     .main-heading {
         font-size: 26px;
     }
-
+    .icon-mnue {
+        width: 20px;
+    }
     .description-text {
         line-height: 25px;
     }

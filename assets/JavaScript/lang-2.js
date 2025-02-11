@@ -5,9 +5,13 @@ const translations = {
       about: "عن الشركة",
       services: "خدماتنا",
       products: "منتجاتنا",
-      business: "اعمالنا",
       Contact: "اتصل بنا",
     },
+    home_slider: "الرئيسة",
+    about_slider: "عن الشركة",
+    services_slider: "خدماتنا",
+    products_slider: "منتجاتنا",
+    Contact_slider: "اتصل بنا",
     direction: "rtl",
     company_text: " نحن شركة رائدة في تقديم الحلول الرقمية المتكاملة، متخصصون في برمجة الأنظمة، تطوير المواقع ،تصميم التطبيقات، وإنشاء المتاجر الإلكترونية، التصميم الجرافيكي. نسعى دائمًا للابتكار والجودة لتحقيق أهداف عملائن وبناء شراكات ناجحة.",
     quick_links_title:"روابط سريعة ",
@@ -28,6 +32,8 @@ const translations = {
     solution_desc_1:"تطوير خدمات رقمية عالية الجودة تعتمد على الابتكار والتقنيات الحديثة لتلبية احتياجات العملاء المتنوعة.",
     solution_desc_2:"تمكين الشركات والأفراد من الوصول إلى أفضل الحلول الرقمية التي تعزز حضورهم في السوق.",
     solution_desc_3:"توفير خدمات تتميز بالدقة والاحترافية لضمان رضا العملاء وتحقيق نتائج تتجاوز التوقعات.",
+    custom_btn:"نظام روّك تك المحاسبي",
+
 },
   en: {
     nav: {
@@ -35,9 +41,13 @@ const translations = {
       about: "About the Company",
       services: "Our Services",
       products: "Our Products",
-      business: "Our Work",
       Contact: "Contact Us",
     },
+    home_slider: "Home",
+    about_slider: "About the Company",
+    services_slider: "Our Services",
+    products_slider: "Our Products",
+    Contact_slider: "Contact Us",
     direction: "ltr",
     company_text: "We are a leading company in providing integrated digital solutions, specializing in system programming, website development, app design, e-commerce store creation, and graphic design. We always strive for innovation and quality to achieve our clients' goals and build successful partnerships.",
     quick_links_title:"Quick Links",
@@ -58,6 +68,7 @@ const translations = {
     solution_desc_1:"Developing high-quality digital services based on innovation and modern technologies to meet diverse customer needs.",
     solution_desc_2:"Empowering companies and individuals to access the best digital solutions that enhance their market presence.",
     solution_desc_3:"Providing services characterized by precision and professionalism to ensure customer satisfaction and achieve results that exceed expectations.",
+    custom_btn:"Rock Tech accounting system",
 
   },
 };
@@ -75,9 +86,14 @@ const updatePageLanguage = (lang) => {
   document.querySelector('.header .nav a:nth-child(2)').textContent = selectedLang.nav.about;
   document.querySelector('.header .nav a:nth-child(3)').textContent = selectedLang.nav.services;
   document.querySelector('.header .nav a:nth-child(4) .lang-prodacts').textContent = selectedLang.nav.products;
-  document.querySelector('.header .nav a.lang-Work').textContent = selectedLang.nav.business;
   document.querySelector('.all-btn-munu .contact-btn .lang-contact').textContent = selectedLang.nav.Contact;
-
+  const sidebar = document.querySelectorAll(".sidebar ul a li span");
+  sidebar[0].textContent = selectedLang.home_slider;
+  sidebar[1].textContent = selectedLang.about_slider;
+  sidebar[2].textContent = selectedLang.services_slider;
+  sidebar[3].textContent = selectedLang.products_slider;
+  document.querySelector(".contact-btn.side span").textContent =
+    selectedLang.Contact_slider;
 
   document.querySelector('.company-text').textContent = selectedLang.company_text;
   document.querySelector('.quick-links-title').textContent = selectedLang.quick_links_title;
@@ -89,7 +105,6 @@ const updatePageLanguage = (lang) => {
   quick_links_list[1].textContent = selectedLang.nav.about;
   quick_links_list[2].textContent = selectedLang.nav.services;
   quick_links_list[3].textContent = selectedLang.nav.products;
-  quick_links_list[4].textContent = selectedLang.nav.business;
   document.querySelector('.main-heading.about').innerHTML = selectedLang.heading_about;
   document.querySelector('.description-text.about').innerHTML = selectedLang.description_text_about;  
   document.querySelector('.cta-button span').textContent = selectedLang.startProject;
@@ -106,7 +121,7 @@ const updatePageLanguage = (lang) => {
   solution_desc[0].textContent = selectedLang.solution_desc_1;
   solution_desc[1].textContent = selectedLang.solution_desc_2;
   solution_desc[2].textContent = selectedLang.solution_desc_3;
-  
+  document.querySelector('.custom-btn a').textContent = selectedLang.custom_btn;
   
   
 
