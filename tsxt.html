@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+<style>
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  body {
+    min-height: 100vh;
+    line-height: 1.5;
+    display: flex;
+    align-items: stretch;
+    font-family: system-ui, sans-serif;
+    padding: 0 1rem;
+  }
+
+
+
+  .u-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .c-carousel {
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  .c-carousel__wrapper.swiper {
+    margin: 0 48px;
+    position: static;
+  }
+
+  .c-carousel__inner-wrapper.swiper-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .c-carousel img {
+    margin: 0 20px;
+  }
+
+  .c-carousel__controls {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .c-carousel__button--next,
+  .c-carousel__button--prev {
+    cursor: pointer;
+    display: flex;
+    width: 39px;
+    height: 39px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 39.5px;
+    background: #EBEBEB;
+  }
+
+  .c-carousel__button--prev.swiper-button-disabled,
+  .c-carousel__button--next.swiper-button-disabled {
+    opacity: 0.35;
+    cursor: auto;
+    pointer-events: none;
+  }
+
+  .c-carousel__item.swiper-slide {
+    max-width: 300px;
+    width: auto;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+</style>
+
+<body>
+
+  <div class="u-wrapper">
+    <div class="c-carousel">
+      <div class="c-carousel__wrapper swiper">
+        <div class="c-carousel__inner-wrapper swiper-wrapper">
+          <div class="c-carousel__item swiper-slide"><img src="https://img.logoipsum.com/331.svg" alt=""></div>
+          <div class="c-carousel__item swiper-slide"><img src="https://img.logoipsum.com/257.svg" alt=""></div>
+          <div class="c-carousel__item swiper-slide"><img src="https://img.logoipsum.com/289.svg" alt=""></div>
+          <div class="c-carousel__item swiper-slide"><img src="https://img.logoipsum.com/242.svg" alt=""></div>
+          <div class="c-carousel__item swiper-slide"><img src="https://img.logoipsum.com/330.svg" alt=""></div>
+          <div class="c-carousel__item swiper-slide"><img src="https://img.logoipsum.com/321.svg" alt=""></div>
+          <div class="c-carousel__item swiper-slide"><img src="https://img.logoipsum.com/216.svg" alt=""></div>
+          <div class="c-carousel__item swiper-slide"><img src="https://img.logoipsum.com/288.svg" alt=""></div>
+          <div class="c-carousel__item swiper-slide"><img src="https://img.logoipsum.com/237.svg" alt=""></div>
+          <div class="c-carousel__item swiper-slide"><img src="https://img.logoipsum.com/265.svg" alt=""></div>
+        </div>
+      </div>
+      <div class="c-carousel__controls" style="--swiper-navigation-color: pink;">
+        <div class="c-carousel__button--prev">
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
+            <path d="M26.8749 10.75C26.8749 10.75 16.125 18.6672 16.125 21.5C16.125 24.333 26.875 32.25 26.875 32.25"
+              stroke="#074077" stroke-width="2.6875" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="c-carousel__button--next">
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
+            <path d="M16.1251 10.75C16.1251 10.75 26.875 18.6672 26.875 21.5C26.875 24.333 16.125 32.25 16.125 32.25"
+              stroke="#074077" stroke-width="2.6875" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  // Following imports only used with bundlers!
+  // import Swiper from "swiper";
+  // import { Navigation, A11y } from 'swiper/modules';
+  // import 'swiper/css';
+
+  const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true, // تشغيل التكرار
+    navigation: {
+      nextEl: '.c-carousel__button--next',
+      prevEl: '.c-carousel__button--prev',
+    },
+    slidesPerView: 'auto',
+    a11y: {
+      prevSlideMessage: 'Previous slide',
+      nextSlideMessage: 'Next slide',
+    },
+  });
+
+
+</script>
+
+</html>
