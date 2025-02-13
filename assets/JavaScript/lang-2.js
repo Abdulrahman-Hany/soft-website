@@ -1,13 +1,13 @@
 const translations = {
   ar: {
     nav: {
-      home: "الرئيسة",
+      home: "الرئيسية",
       about: "عن الشركة",
       services: "خدماتنا",
       products: "منتجاتنا",
       Contact: "اتصل بنا",
     },
-    home_slider: "الرئيسة",
+    home_slider: "الرئيسية",
     about_slider: "عن الشركة",
     services_slider: "خدماتنا",
     products_slider: "منتجاتنا",
