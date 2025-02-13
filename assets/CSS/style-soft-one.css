@@ -1717,7 +1717,7 @@ input.check-toggle-round-flat:checked+label:after {
     .icon-mnue {
         display: block;
         cursor: pointer;
-        margin-top: 8px;
+        margin-top: 0px;
     }
 
     .star-whyServier {
