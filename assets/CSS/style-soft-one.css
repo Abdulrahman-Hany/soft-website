@@ -1898,7 +1898,16 @@ input.check-toggle-round-flat:checked+label:after {
     .contact-container {
         padding: 100px 25px;
     }
-
+    html[style*="direction: ltr"] .service-item-alt,
+    html[style*="direction: ltr"] .service-item-wide {
+        direction: initial;
+    }
+    html[style*="direction: ltr"] .service-description {
+        text-align: left;
+    }
+    html[style*="direction: ltr"] .service-title {
+        text-align: left;
+    }
     .hero-image {
         width: 100% !important;
         min-width: unset !important;
@@ -2061,16 +2070,6 @@ input.check-toggle-round-flat:checked+label:after {
         max-width: 328px;
         max-height: 312px;
         padding: 33px 25px;
-    }
-    html[style*="direction: ltr"] .service-item-alt,
-    html[style*="direction: ltr"] .service-item-wide {
-        direction: initial;
-    }
-    html[style*="direction: ltr"] .service-description {
-        text-align: left;
-    }
-    html[style*="direction: ltr"] .service-title {
-        text-align: left;
     }
     .service-item-alt:nth-child(2),
     .service-item-alt:nth-child(3){
