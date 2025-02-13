@@ -1717,7 +1717,6 @@ input.check-toggle-round-flat:checked+label:after {
     .icon-mnue {
         display: block;
         cursor: pointer;
-        margin-top: 0px;
     }
 
     .star-whyServier {
@@ -1989,6 +1988,7 @@ input.check-toggle-round-flat:checked+label:after {
     }
     .icon-mnue {
         width: 20px;
+        margin-top: 6px;
     }
     .description-text {
         line-height: 25px;
@@ -2061,6 +2061,20 @@ input.check-toggle-round-flat:checked+label:after {
         max-width: 328px;
         max-height: 312px;
         padding: 33px 25px;
+    }
+    html[style*="direction: ltr"] .service-item-alt,
+    html[style*="direction: ltr"] .service-item-wide {
+        direction: initial;
+    }
+    html[style*="direction: ltr"] .service-description {
+        text-align: left;
+    }
+    html[style*="direction: ltr"] .service-title {
+        text-align: left;
+    }
+    .service-item-alt:nth-child(2),
+    .service-item-alt:nth-child(3){
+        max-height: 345px;
     }
 
     .back-loght-card {
