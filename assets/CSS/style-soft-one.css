@@ -95,7 +95,7 @@ header {
     align-items: center;
     max-width: 1230px;
     margin: 0 auto;
-    padding: 10px 50px;
+    padding: 0px 50px;
 }
 
 header.sticky {
@@ -240,6 +240,7 @@ html[style*="direction: ltr"] .nav .custom-btn svg{
     margin-top: 155px;
 }
 
+.btn-solut a .cta-button,
 .cta-button {
     border: none;
     outline: none;

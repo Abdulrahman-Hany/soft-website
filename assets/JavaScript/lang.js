@@ -76,7 +76,6 @@ const translations = {
       " نحن شركة رائدة في تقديم الحلول الرقمية المتكاملة، متخصصون في برمجة الأنظمة، تطوير المواقع ،تصميم التطبيقات، وإنشاء المتاجر الإلكترونية، التصميم الجرافيكي. نسعى دائمًا للابتكار والجودة لتحقيق أهداف عملائن وبناء شراكات ناجحة.",
     quick_links_title: "روابط سريعة ",
     contact_title_footer: "تواصل",
-    contact_text_footer: "الرياض",
     copyright_text:
       "حقوق النسخ محفوظة © لدى شركة  ام سوفت للبرمجيات و تقنية المعلومات",
     custom_btn: "نظام روّك تك المحاسبي",
@@ -163,7 +162,6 @@ const translations = {
       "We are a leading company in providing integrated digital solutions, specializing in system programming, website development, app design, e-commerce store creation, and graphic design. We always strive for innovation and quality to achieve our clients' goals and build successful partnerships.",
     quick_links_title: "Quick Links",
     contact_title_footer: "Contact",
-    contact_text_footer: "Riyadh",
     copyright_text:
       "Copyright © All rights reserved to M Soft Software and Information Technology Company",
     custom_btn: "Rock Tech accounting system",
@@ -284,8 +282,6 @@ const updatePageLanguage = (lang) => {
     selectedLang.quick_links_title;
   document.querySelector(".contact-title-footer").textContent =
     selectedLang.contact_title_footer;
-  document.querySelector(".contact-text-footer").textContent =
-    selectedLang.contact_text_footer;
   document.querySelector(".copyright-text").textContent =
     selectedLang.copyright_text;
   const quick_links_list = document.querySelectorAll(".quick-links-list a");

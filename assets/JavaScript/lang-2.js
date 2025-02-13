@@ -16,7 +16,6 @@ const translations = {
     company_text: " نحن شركة رائدة في تقديم الحلول الرقمية المتكاملة، متخصصون في برمجة الأنظمة، تطوير المواقع ،تصميم التطبيقات، وإنشاء المتاجر الإلكترونية، التصميم الجرافيكي. نسعى دائمًا للابتكار والجودة لتحقيق أهداف عملائن وبناء شراكات ناجحة.",
     quick_links_title:"روابط سريعة ",
     contact_title_footer: "تواصل",
-    contact_text_footer:"الرياض",
     copyright_text:"حقوق النسخ محفوظة © لدى شركة  ام سوفت للبرمجيات و تقنية المعلومات",
     heading_about: ' شركة ام سوفت<span class="heading-about"> نساعدك في المضي <span class="remove-br"></span> قدماً نحو المستقبل بخطى واثقة</span> ',
     description_text_about: 'نحن شركة ام سوفت للبرمجيات و تقنية المعلومات نقدم خدمات متكاملة <span class="remove-br"></span> تشمل برمجة الأنظمة، تطوير المواقع، تصميم التطبيقات، وإنشاء المتاجر <span class="remove-br"></span> الإلكترونية، التصميم الجرافيكي.',
@@ -52,7 +51,6 @@ const translations = {
     company_text: "We are a leading company in providing integrated digital solutions, specializing in system programming, website development, app design, e-commerce store creation, and graphic design. We always strive for innovation and quality to achieve our clients' goals and build successful partnerships.",
     quick_links_title:"Quick Links",
     contact_title_footer: "Contact",
-    contact_text_footer:"Riyadh",
     copyright_text:"Copyright © All rights reserved to M Soft Software and Information Technology Company",
     heading_about:"M Soft Company helps you <br/> move confidently into the<br/> future.",
     description_text_about:"We are M Soft Software and Information Technology Company,<br/> offering comprehensive services including system <br/>programming, website development, application design, and<br/> creating e-commerce stores, as well as graphic design.",
@@ -98,7 +96,6 @@ const updatePageLanguage = (lang) => {
   document.querySelector('.company-text').textContent = selectedLang.company_text;
   document.querySelector('.quick-links-title').textContent = selectedLang.quick_links_title;
   document.querySelector('.contact-title-footer').textContent = selectedLang.contact_title_footer;
-  document.querySelector('.contact-text-footer').textContent = selectedLang.contact_text_footer;
   document.querySelector('.copyright-text').textContent = selectedLang.copyright_text;
   const quick_links_list = document.querySelectorAll('.quick-links-list a');
   quick_links_list[0].textContent = selectedLang.nav.home;
