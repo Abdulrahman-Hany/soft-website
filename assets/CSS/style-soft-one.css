@@ -1984,23 +1984,6 @@ input.check-toggle-round-flat:checked+label:after {
         width: 70px;
         height: 70px;
     }
-    input.check-toggle-round-flat+label {
-        width: 75px;
-        height: 27px;
-    }
-    .switch>span.on ,
-    .switch>span.off{
-        top: 7px;
-    }
-    .switch>span {
-        font-size: 10px;
-    }
-    input.check-toggle-round-flat+label:after {
-        left: 7px;
-    }
-    input.check-toggle-round-flat+label:after {
-        width: 26px;
-    }
     .main-heading {
         font-size: 26px;
     }
